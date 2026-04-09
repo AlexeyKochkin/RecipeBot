@@ -12,7 +12,7 @@ class RecipeParser:
         with open(self.filename, 'r', encoding='utf-8') as f:
             content = f.read()
         
-        recipe_pattern = r'\t(\d+)\.\t(.+?)(?=\t\d+\.\t|\Z)'
+        recipe_pattern = r'(?:\t)?(\d+)\.\s+(.+?)(?=(?:\t)?\d+\.\s+|\Z)'
         matches = re.findall(recipe_pattern, content, re.DOTALL)
         
         for number, recipe_text in matches:

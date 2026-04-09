@@ -2,7 +2,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, ContextTypes
 from RecipeParser import RecipeParser
 
-BOT_TOKEN = '8509981769:AAHZvNFfMW4IU3uktTEENa6YdHNrvjvZPc0'
+BOT_TOKEN = ''
 
 parser = RecipeParser('recipes.txt')
 parser.parse()
